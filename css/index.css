@@ -1,0 +1,121 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+
+.weekend{
+    background: #F0DFE5 !important;
+}
+
+.gantt-fullscreen {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    font-size: 32px;
+    background: transparent;
+    cursor: pointer;
+    opacity: 0.5;
+    text-align: center;
+    -webkit-transition: background-color 0.5s, opacity 0.5s;
+    transition: background-color 0.5s, opacity 0.5s;
+}
+
+.gantt-fullscreen:hover {
+    background: rgba(150, 150, 150, 0.5);
+    opacity: 1;
+}
+
+.highlighted-column {
+    background-color: #fff3a1;
+}
+
+.gantt_task_scale .gantt_scale_cell {
+    cursor: default;
+}
+
+.gantt_task_scale .gantt_scale_cell.highlighted-column {
+    color: #454545;
+    font-weight: bold;
+}
+
+.red .gantt_cell, .odd.red .gantt_cell,
+.red .gantt_task_cell, .odd.red .gantt_task_cell {
+    background-color: #FDE0E0;
+}
+
+.green .gantt_cell, .odd.green .gantt_cell,
+.green .gantt_task_cell, .odd.green .gantt_task_cell {
+    background-color: #BEE4BE;
+}
+
+.gantt_task_link.start_to_start .gantt_line_wrapper div {
+    background-color: #dd5640;
+}
+
+.gantt_task_link.start_to_start:hover .gantt_line_wrapper div {
+    box-shadow: 0 0 5px 0px #dd5640;
+}
+
+.gantt_task_link.start_to_start .gantt_link_arrow_right {
+    border-left-color: #dd5640;
+}
+
+.gantt_task_link.finish_to_start .gantt_line_wrapper div {
+    background-color: #7576ba;
+}
+
+.gantt_task_link.finish_to_start:hover .gantt_line_wrapper div {
+    box-shadow: 0 0 5px 0px #7576ba;
+}
+
+.gantt_task_link.finish_to_start .gantt_link_arrow_right {
+    border-left-color: #7576ba;
+}
+
+.gantt_task_link.finish_to_finish .gantt_line_wrapper div {
+    background-color: #55d822;
+}
+
+.gantt_task_link.finish_to_finish:hover .gantt_line_wrapper div {
+    box-shadow: 0 0 5px 0px #55d822;
+}
+
+.gantt_task_link.finish_to_finish .gantt_link_arrow_left {
+    border-right-color: #55d822;
+}
+
+.high {
+    border: 2px solid #d96c49;
+    color: #d96c49;
+    background: #d96c49;
+}
+
+.high .gantt_task_progress {
+    background: #db2536;
+}
+
+.medium {
+    border: 2px solid #34c461;
+    color: #34c461;
+    background: #34c461;
+}
+
+.medium .gantt_task_progress {
+    background: #23964d;
+}
+
+.low {
+    border: 2px solid #6ba8e3;
+    color: #6ba8e3;
+    background: #6ba8e3;
+}
+
+.low .gantt_task_progress {
+    background: #547dab;
+}
